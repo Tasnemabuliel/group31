@@ -1,11 +1,10 @@
-{% load static %}
 <html>
 <head>
     <title>OpenToWork</title>
     <style>
         a{
-            color:white;
-            background-color:red;
+            color:black;
+            background-color:block;
             padding:5px 15px 5px 15px;
             text-decoration:none;
             border-radius:5px;
@@ -14,7 +13,7 @@
         }
         body
         {
-            background-image:url({% static 'images/food.png' %});
+            background-image:url("backgroun3.jpeg");
         }
 
         * {box-sizing: border-box;}
@@ -89,49 +88,51 @@
     </style>
 </head>
 <body>
-<table border="0" width="100%" height="10%"  style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;border-bottom:1px dotted white;box-shadow:1px 1px 5px white;">
+<table border="0" width="100%" height="10%"  style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;border-bottom:1px dotted yellow;box-shadow:1px 1px 6px white;">
     <tr>
-
-        <td style="color:red;font-size:50px;font-weight:bold;text-shadow:2px 2px 2px white">All Jobs in one place</td>
-        <td width="10%" align="center"> <a href="index">Home</a></td>
-        <td width="10%" align="center"> <a href="about">About</a></td>
-        <td width="10%" align="center"> <a href="projectreg">Contact</a></td>
-        <td width="10%" align="center"> <a href="projectlist">Gallery</a></td>
-        <td width="10%" align="center"> <a href="admin">Admin</a></td>
-
+      <font color="#1c1717"/>
+        
+        <td style="color:gray;font-size:25px;font-weight:italic;text-shadow:1px 1px 1px black">All Jobs in one place</td>
+        <td width="5%" align="center"> <a href="choicesignup.html">רישום</a></td>
+        <td width="5%" align="center"> <a href="choicesignin.html">התחבר</a></td>
+        <td width="5%" align="center"> <a href="contact.html">CONTACT</a></td>
+        <td width="5%" align="center"> <a href="about.html">ABOUT</a></td>
+        <button> rrrr <a href="contact.html"> </a></button>
+        
     </tr>
 </table><br><br><br><br><br><br><br>
 
-<table border="0" style="box-shadow:1px 1px 10px white" width="70%" height="70%" align="center">
+<table border="0" style="box-shadow:1px 1px 10px yellow" width="30%" height="50%" align="center">
     <tr>
         <td align="center" valign="top">
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 4</div>
-                    <img src="{% static 'images/fbn1.png' %}" style="width:1100px" height="350px">
+                    <img src="work4.jpeg" style="width:1100px" height="350px">
                     <div class="text">Caption Text</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 4</div>
-                    <img src="{% static 'images/fbn2.png' %}" style="width:1100px" height="350px">
+                    <img src="workphoto1.jpeg" style="width:1100px" height="350px">
                     <div class="text">Caption Two</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 4</div>
-                    <img src="{% static 'images/fbn3.jpg' %}" style="width:1100px" height="350px">
+                    <img src="work3.jpeg" style="width:1100px" height="350px">
                     <div class="text">Caption Three</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 4</div>
-                    <img src="{% static 'images/fbn4.jpg' %}" style="width:1100px" height="350px">
+                    <img src="workphoto2.jpeg" style="width:1100px" height="350px">
                     <div class="text">Caption Text</div>
                 </div>
             </div>
             <br>
+            
 
             <div style="text-align:center">
                 <span class="dot"></span>
@@ -141,7 +142,7 @@
             </div>
         </td>
     </tr>
-    <tr style="background-color:red;color:white;height:25px">
+    <tr style="background-color:#faf68c;color:gray;height:35px">
         <td><marquee behavior="alternate">
             Get ready for your next Job!
         </marquee></td>
