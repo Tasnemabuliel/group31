@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import logout
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 #from models import *
 from .forms import createUserForm
@@ -20,12 +21,13 @@ def signup(request):
          form=createUserForm(request.POST)
          if form.is_valid():
             form.save()
-            user=form.cleaned_data.get('userame')
+            user=form.cleaned_data.get('username')
             messages.success(request,'Account was created for'+user)
             return redirect('signin')
 
     context={'form':form}
     return render(request,'app1/signup.html',context)
+
 
 def signin(request):
     if(request.method=="POST"):
@@ -36,13 +38,18 @@ def signin(request):
             login(request,user)
             return redirect('HomePage')
 
-
+        else:
+            messages.info(request,'Username OR password is incorrect')
+           
     return render(request,'app1/signin.html')
 
+login_required(login_url='signin')
 def signout(request):
     logout(request)
-    return redirect('home')
+    return redirect('signin')
 
+
+login_required(login_url='signin')
 def HomePage(request):
     return render(request,'app1/HomePage.html')  
 
@@ -53,3 +60,6 @@ def profile(request):
 
 def settings(request):
     return render(request,'app1/settings.html')
+
+def contact(request):
+    return render(request,'app1/contact.html')    
