@@ -13,7 +13,7 @@
         }
         body
         {
-            background-image:url("backgroun3.jpeg");
+            background-image:url("photo/backgroun3.jpeg");
         }
 
         * {box-sizing: border-box;}
@@ -94,7 +94,7 @@
       <center>
         <td width="20%" style="color: black" align="center">All Jobs in one place</td>
           
-          <a href="homepage.html"><img src=" logo.jpeg" width="100"></a>
+          <a href="homepage.html"><img src=" photo/logo.jpeg" width="100"></a>
             
             <td width="6%" align="center"> <a href="choicesignup.html">רישום</a></td>
             <td width="6%" align="center"> <a href="choicesignin.html">התחבר</a></td>
@@ -105,53 +105,6 @@
         
     </tr>
 </table><br><br><br><br><br><br><br>
-
-<table border="0" style="box-shadow:1px 1px 10px yellow" width="30%" height="50%" align="center">
-    <tr>
-        <td align="center" valign="top">
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src=" work4.jpeg" style="width:1100px" height="350px">
-                    <div class="text">Caption Text</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="workphoto1.jpeg" style="width:1100px" height="350px">
-                    <div class="text">Caption Two</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src=" work3.jpeg" style="width:1100px" height="350px">
-                    <div class="text">Caption Three</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src=" workphoto2.jpeg" style="width:1100px" height="350px">
-                    <div class="text">Caption Text</div>
-                </div>
-            </div>
-            <br>
-            
-
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </td>
-    </tr>
-    <tr style="background-color:#faf68c;color:gray;height:35px">
-        <td><marquee behavior="alternate">
-            Get ready for your next Job!
-        </marquee></td>
-    </tr>
-</table>
 
 <script>
     var slideIndex = 0;
@@ -178,42 +131,77 @@
 </body>
 </html>
 
-<b><label style="font-size:120%; background-color:lightblue;" for="JipName">NameJob:</label></b>
-<input type="text" id="jobname" name="NameJob"><br><br>
-
-    <b><label style="font-size:120%; background-color:lightblue;" for="worktime">worktime:</label> </b>
+<center>
+    <p><b><label style="font-size:120%; background-color:lightblue;"  for="jobs">choose the right time:</label></b></p>
     <select name="job" id="job">
       <optgroup label="priority by jobs">
-        <option value="Morning">Morning</option>
-        <option value="Evening">Evening</option>
-        <option value="Night">Night</option>
+        <option value="משמרות בוקר">משמרות בוקר</option>
+        <option value="משמרות ערב">משמרות ערב</option>
+        <option value="משמרות לילה">משמרת לילה</option>
       </optgroup>
-    </select><br>
-    <br>
+    </center>
     </select>
-    
-       <b> <label style="font-size:120%; background-color:lightblue;"  for="jobs">Area:</label></b>
+    <center>
+       <p><b> <label style="font-size:120%; background-color:lightblue;"  for="jobs">Choose a right area:</label></b></p>
         <select name="job" id="job">
           <optgroup label="priority by jobs">
-            <option value="North">North</option>
-            <option value="Center">Center</option>
-            <option value="South">South</option>
+            <option value="שדרות אופקים נתיבות">שדרות אופקים נתיבות</option>
+            <option value="באר שבע והסביבה">באר שבע והסביבה</option>
+            <option value="נתניה">נתניה</option>
+            <option value="אור יהודה - יהוד">אור יהודה - יהוד</option>
+            <option value="חדרה והסביבה">חדרה והסביבה</option>
+            <option value="רמת הגולן">רמת הגולן</option>
+            <option value="השרון">השרון</option>
+            <option value="עפולה והסביבה">עפולה והסביבה</option>
+            <option value="ירושלים והסביבה">ירושלים והסביבה</option>
+            <option value="נצרת והסביבה">נצרת והסביבה</option>
+            <option value="חיפה והקריות">חיפה והקריות</option>
+            <option value="ואדי ערה">ואדי ערה</option>
+            <option value="רמלה - לוד">רמלה - לוד</option>
+            <option value="מודיעין-שוהם'">מודיעין-שוהם'</option>
+            <option value="אשדוד והסביבה">אשדוד והסביבה</option>
+            <option value="טבריה והסביבה">North</option>
+            <option value="רחובות - נס ציונה">רחובות - נס ציונה</option>
+            <option value="יקנעם והסביבה">יקנעם והסביבה</option>
           </optgroup>
-          </select><br>
-          <br>
-        
-
+        </center>
         </select>
-        
-
-           <b> <label style="font-size:120%; background-color:lightblue;" for="jobs">Type</label></b>
+        <center>
+           <p><b> <label style="font-size:120%; background-color:lightblue;" for="jobs">Choose a right type:</label></b></p>
             <select name="job" id="job">
               <optgroup label="priority by jobs">
-                <option value="Part Time Work">Part Time Work</option>
-                <option value="Work of a student">Work of a student</option>
-                <option value="Full Time job">Full Time job</option>
+                <option value="עבודה חלקית">Part Time Work</option>
+                <option value="עבודה חלקית">Work of a student</option>
               </optgroup>
-            
+            </center>
+            </select>
+            <b> <label style="font-size:120%; background-color:lightblue;"  for="jobs">Area:</label></b>
+            <select name="job" id="job">
+              <optgroup label="priority by jobs">
+                <option value="חקלאות">חקלאות</option>
+                <option value="שיווק ודיגיטל">שיווק ודיגיטל</option>
+                <option value="פיננסים וכלכלה">פינסים וכלכלה</option>
+                <option value="בנקאות">בנקאות</option>
+                <option value="מלונאות">מלונאו/option>
+                <option value="בנייה ואדרכילות">בנייה ואדרכילות</option>
+                <option value="קמעונאות">קמעונאות</option>
+                <option value="ביטוח">ביטוח</option>
+                <option value="חשמל ואלקטרוניקה">חשמל ואלקטרוניקה</option>
+                <option value="הייטק וטכנולוגיה">הייטק וטכנולוגיה</option>
+                <option value="ייצור ותעשייה">ייצור ותעשייה</option>
+                <option value="פירסום ויחסי ציבור">פירסום ויחסי ציבור</option>
+                <option value="שירות לקוחות">שירות לקוחות</option>
+                <option value="ביטחון ושמירה">ביטחון ושמירה</option>
+                <option value="מזכירות ואדמיניסטרציה">מזכירות ואדמיניסטרציה</option>
+                <option value="מכירות">מכירות</option>
+                <option value="רכב, הפצה ומכונאות">רכב, הפצה ומכונאות</option>
+                <option value="ביוטק">ביוטק</option>
+                <option value="שרטוט וגרפיקה">שרטוט וגרפיקה</option>
+                <option value="לוגיסטיקה, רכש ומחסן">לוגיסטיקה, רכש ומחסן</option>
+              </optgroup>
+              </select><br>
+              <br>
+    
             </select>
             <html>
     <head>
